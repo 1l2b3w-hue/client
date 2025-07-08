@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本对齐</title>
+    <style>
+        p { 
+            text-align: center;
+            /* 本质是调整内容对齐方式，没有改变标签位置 */
+        }
+        div {
+            text-align: center;
+            /* 对齐div中的内容 */
+        }
+        .p2 {
+            color: gray;
+        }
+        .orange {
+            color: orange;
+        }
+        .delete {
+            text-decoration: line-through;
+            /* 删除线 */
+            font-weight: 200;
+            color:gray;
+        }
+    </style>
+</head>
+<body>
+    <p>今年受成本驱动</p>
+    <div>
+        <!-- 设置div是因为text-align对齐的本质在于控制内容对齐 -->
+        <img src="./1.png" alt="Xiaomi Buds 4 Pro" title="Xiaomi Buds 4 Pro耳机">
+        <p>Xiaomi Buds 4 Pro </p>
+        <p class="p2">48dB智能动态降噪|骨声纹通话降噪...</p>
+        <span class="orange">999元</span>&nbsp;
+        <span class="delete">1099元</span>
+    </div>
+</body>
+</html>

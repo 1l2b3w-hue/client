@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体族</title>
+    <style>
+        * {
+            font-size: 50px;
+        }
+        .kaiti {
+            font-family: 楷体;
+            
+        }
+        .songti {
+            font-family: 宋体;
+        }
+    </style>
+</head>
+<body>
+    <P >我是正常文字</P>
+    <P class="kaiti">我是楷体</P>
+    <P class="songti">我是宋体</P>
+
+    <!-- 针对代码：font-family:Microsoft YaHeiHeiti SCtahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif; -->
+    <!--其作用为：从第一个字体Microsoft YaHeiHeiti SCtahoma开始，查找电脑中是否含有该字体，
+    有，则用，没有继续往后找。如果都没找到，这会安排一个默认的字体。  -->
+    <!-- 一般情况下，默认字体都会在最后给出，且是一个字体族名。其中一般使用sans-serif无衬线字体来进行网页开发。 -->
+    <!--字体族名有：无衬线字体、衬线字体、衬线字体的衬线  -->
+</body>
+</html>

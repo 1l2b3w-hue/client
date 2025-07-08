@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID和通配符选择器</title>
+    <style>
+        * {
+            font-size: 30px;
+            color: blue;
+            /* 很明显的是，后续的ID选择器将通配符选择器进行了覆盖处理 */
+        }
+        #red {
+            color: red;
+        }
+        #inch {
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 定义ID选择器：1.定义ID选择器：#ID名；2.使用ID选择器（标签添加ID：id=“”） -->
+    <p>我不想更改这段文字的颜色。</p>
+    <p id="red">我要将这段文字更改为红色</p>
+    <p id="inch">我想将这段文字大小更改为50px，但不要改变颜色</p>
+    <!-- 浏览器在针对于ID选择器，会默认将ID名一样的标签进行样式更改（宽松处理），因此会对两个id相同的标签进行修改。 -->
+    <!-- 但html中是不允许相同ID名出现的 -->
+    
+    <p>1234324</p>
+    <p>尘白禁区启动！！！！！</p>
+</body>
+</html>

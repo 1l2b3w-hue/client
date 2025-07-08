@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字大小、粗细和倾斜属性</title>
+    <style>
+        .resize1 {
+            font-size: 50px;
+        }
+        .resize2 {
+            font-size:100px;
+        }
+        /* 针对于font-size属性，其属性值应该带上px单位，否则无法生效（针对数值） */
+        /* 在Edge浏览其中，其文字大小与谷歌浏览器一致：16px */
+
+
+        .thick {
+            font-weight:700 ;
+        }
+        .tenuity {
+            font-weight: 100;
+        }
+
+        .tilt {
+            font-style:oblique;
+            /* italic：倾斜 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 调节字体大小 -->
+    <p >尘白启动！</p>
+    <p class="resize1">尘白启动！</p>
+    <p class="resize2">尘白启动！</p>
+    <!-- 调节字体粗细 -->
+    <p >尘白启动！</p>
+    <p class="thick">尘白启动！</p>
+    <p class="tenuity">尘白启动！</p>
+
+    <!-- 调节字体倾斜 -->
+    <p>尘白启动！</p>
+    <p class="tilt">尘白启动！</p>
+</body>
+</html>

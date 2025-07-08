@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>标签、类选择器</title>
+    <style>
+        p {
+            color: blue;
+            
+            /* 标签选择器，将选中的标签设置相同样式，但无法差异化设置同名标签样式 */
+        }
+        .red {
+            color: red;
+        }
+        .black {
+            color: black;
+        }
+        .seize{
+            font-size: 50px;
+        }
+        /* 一个类选择器可以给多个标签使用 */
+    </style>
+
+</head>
+<body>
+    <p class="seize">123456789</p>
+    <p class="red">1231</p>
+    <p class="black seize">213545</p>
+    <div class="red seize">1234</div>
+    <!-- 一个标签只能有一个class属性，但可以有多个属性值，属性值由空格隔开 -->
+</body>
+</html>
