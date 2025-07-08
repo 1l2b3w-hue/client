@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音频</title>
+</head>
+<body>
+    <audio src="./music/123.ogg" controls="controls" loop autoplay></audio>
+    <!-- 浏览器不会自动播发音频文件，需要相关属性来协调 -->
+    <!-- controls:增加一个控制面板，用于控制音频的播放 -->
+    <!-- control不需要设置属性值就可以显示播放面板 ？在HTML5中，当属性名与属性值相同时，可以写成一个单词即可。即这里的
+        controls=“controls” -->
+    <!--loop:用于循环播发音频 属性、值与controls一样  -->
+    <!-- autoplay:用于自动播发音频，但由于浏览器都会禁止自动播放功能，因此，目前好像啥用都没有 -->
+
+    <video src="./music/6.mp4" width="200" controls loop  muted autoplay ></video>
+    <!-- 在没有添加controls属性时，页面只会刷新一张图片 -->
+    <!-- 其实属性、规则大体与音频标签一致 其中新增muted属性。指静音播放。并且在autoplay中，只会允许视频在静音模式下自动播放， -->
+    <!-- 两个标签都不会独占一行。 -->
+    
+</body>
+</html>

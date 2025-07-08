@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>路径</title>
+</head>
+<body>
+    <!-- 相对路径 -->
+    <img src="./1.jpg" title="这是当前文件夹的照片" width="100">
+    <img src="../2.jpg" title="这是当前文件夹的上一级文件夹的照片" width="100">
+    <img src="./test/有问题点我！安装教程！.png" title="这是当前文件夹的下一级文件夹中的照片" width="100">
+    <!-- .:当前文件所在的文件夹； -->
+    <!-- ..:当前文件所在的文件夹的上一级文件夹 -->
+    <!-- /文件名:进入一个文件夹里面 -->
+
+
+    <!-- 绝对路径 -->
+    <img src="C:/test2/3.png" title="这是C盘下的test2文件夹的一个照片,采用“/”形式寻找照片" width="100">
+    <img src="C:\test2\3.png" title="这是C盘下的test2文件夹的一个照片,采用“\”形式寻找照片" width="100">
+    <!-- windows下默认的进入文件的符号为：“\”，但其他系统采用"/",但可以统一采用“/” -->
+
+    <!-- 引用在他人网页中的照片 -->
+    <!-- https://g.fp.ps.netease.com/cg-image/file/64b89838e3899258a1573c48VKI70e4a05?fop=imageView%2F2%2Fw%2F1200%2Fh%2F680%2Ff%2Fjpeg%2Fq%2F60 -->
+    <img src="https://g.fp.ps.netease.com/cg-image/file/64b89838e3899258a1573c48VKI70e4a05?fop=imageView%2F2%2Fw%2F1200%2Fh%2F680%2Ff%2Fjpeg%2Fq%2F60" title="这是一张网上的游戏照片" width="300">
+</body>
+</html>
