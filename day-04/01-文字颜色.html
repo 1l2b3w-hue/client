@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字颜色</title>
+    <style>
+        .p1 {
+            /* 颜色属性直接给颜色英文单词 */
+            color: red;
+            font-size: 66px;
+            /* 一般用于学习 */
+        }
+        /* 后面都是用于工作场景 */
+        .p2 {
+            /* 颜色属性值为rgb(r,g,b)  取值范围：0~255*/
+            color: rgb(222, 150, 200);
+            /* 按照红、绿、蓝三原色，根据取值来决定最总颜色。 */
+            
+        }
+        .p3 {
+            color: rgba(213, 2, 150, 1);
+            /* 多个a，控制颜色透明度，取值为0~1 */
+            /* 比上个好点，可以设置透明色 */
+        }
+        .p4 {
+            color: #fc0;
+            /* 常用于开发场景，但不用学，后面复制粘贴就行 */
+            /* 六位数，两位分别对应rgb三个，其中，当代表某个色的位数数值一致，则可以化简成一位，上面的fc0就表示：ffcc00*/
+        }
+    </style>
+</head>
+<body>
+    <p class="p1">尘白禁区好，尘白妙</p>
+    <p class="p2">尘白禁区好，尘白妙</p>
+    <p class="p3">尘白禁区好，尘白妙</p>
+    <p class="p4">尘白禁区好，尘白妙</p>
+</body>
+</html>

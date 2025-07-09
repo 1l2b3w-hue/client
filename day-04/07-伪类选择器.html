@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+    <style>
+        a {
+            font-size: 30px;
+            text-decoration: none;
+            line-height: 60px;
+        }
+        a:link {
+            color: black;
+            /* 在网页中，未点击时该标签会显示改样式 */
+        }
+        a:visited {
+            color: blue;
+            /* 一般情况下，点击标签后，因为存在缓存内容，会一直保持点击后的样式 */
+             /* 在网页中，点击后该标签会显示改样式 */
+        }
+        a:hover {
+            /* 选择器：hover:使选择器选中的标签在鼠标悬停时，产生相关样式变化 */
+            /* 可以在任何标签上实现鼠标悬停改变样式 */
+            text-decoration: underline;
+            color: red;
+        }
+        a:active {
+            color: black;
+            /* 在鼠标点击该标签时（点击鼠标到松开鼠标之间的时间）显示改样式效果， */
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">文旅部发布优化疫情防控最新安</a></li>
+        <li><a href="#">露营旅游休闲发展指导意见发布</a></li>
+        <li><a href="#">“中意面对面”系列活动启动</a></li>
+        <li><a href="#">"城市巡游记"正式启动</a></li>
+    </ul>
+</body>
+</html>
