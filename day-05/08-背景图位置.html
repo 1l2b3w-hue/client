@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图位置</title>
+    <style>
+        div {
+            width: 80px;
+            height: 80px;
+            background-color: skyblue;
+            background-image: url(./2.png);
+            background-repeat: no-repeat;
+            text-align: center;
+            /* 水平取负数时，图片往左移。正数向右 */
+            /* background-position:-20px 0; */
+            /* 垂直方向，正往下，负往上 */
+            background-position: center top; 
+            /* 在只取一个关键词的情况下，另一个方向默认居中。且关键词的顺序可以颠倒。 */
+            /* background-position: 20px; */
+            /*在只取一个数值情况下，该数值默认为水平方向，且垂直默认居中 */
+        }
+    </style>
+</head>
+<body>
+    <div>背景图位置</div>
+</body>
+</html>

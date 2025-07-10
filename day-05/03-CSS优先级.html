@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>优先级</title>
+    <style>
+        * {
+            color: blue ;
+            /* color: blue !important; */
+            /* ！important慎用 */
+        }
+        p {
+            color: skyblue;
+            
+        }
+        .p1 {
+            color: aquamarine;
+            
+        }
+        #p2 {
+            color: black;
+            
+        }
+        /* 选择器的优先级：选中的范围越大，其优先级越小 */
+        /* 针对于!important,放在一个选择器的某个属性的属性值后面，分号前，则将该属性的优先级最高*/
+        /* 继承属性优先级最低！！ */
+    </style>
+</head>
+<body>
+    <div>尘白禁区三周年快乐</div>
+    <p>尘白禁区
+        <span>这是继承p的属性</span>
+    </p>
+    <p class="p1">尘白禁区</p>
+    <p id="p2">尘白禁区</p>
+    <p style="color: red;">尘白禁区</p>
+</body>
+</html>

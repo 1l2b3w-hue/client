@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>继承性</title>
+    <style>
+        div {
+            color: red;
+            font-size: 30px;
+            font-weight: 700;
+        }
+        /* 子代默认继承父代的文字控制属性 */
+        p {
+            color: blue;
+            font-weight: 400;
+           
+        }
+        /* 子代存在样式时，则优先使用自身样式设计 */
+    </style>
+</head>
+<body>
+    <div>
+        <p>我要设置div中的文字全为红色</p>
+        <span>这是红1</span>
+    </div>
+    <p>我不一样，我不想加入div</p>
+</body>
+</html>
