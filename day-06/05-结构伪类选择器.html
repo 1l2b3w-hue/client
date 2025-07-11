@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结构伪类选择器</title>
+    <style>
+        /* li:first-child {
+            color: green;
+        }
+        li:nth-child(2) {
+            color:aqua;
+        }
+        li:nth-child(3) {
+            color:red;
+        } */
+        /* n的取值都是从0开始，逐步增加*/
+        li:nth-child(-n+3){
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>宁子服</li>
+        <li>聂莫琪</li>
+        <li>聂莫黎</li>
+        <li>瞎师婆</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+    </ul>
+</body>
+</html>

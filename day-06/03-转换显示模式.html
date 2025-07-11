@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>转换显示模式</title>
+    <style>
+        div {
+            /* 按照块级元素显示样式，两个div将会各自独占两行，宽高没设置情况下，与body同宽 */
+            width: 80px;
+            height: 80px;
+            
+        }
+        /* 块级转行内、行内跨块 */
+        .c1 {
+            background-color: red;
+            display: inline;
+        }
+        .c2 {
+            background-color: skyblue;
+            display: inline-block;
+        }
+        /* 行内转块、行内 */
+        .s1 {
+            background-color: red;
+            height: 80px;
+            width: 80px;
+            display: block;
+        }
+        .s2 {
+            background-color: yellow;
+        }
+        .s3 {
+            width: 80px;
+            height: 80px;
+            background-color: blue;
+            display: inline-block;
+        }
+        /* 行内转块、行 */
+        img {
+            width: 100px;
+            height: 100px;
+            display: block;
+            /* img转行内一定用不到 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 块级元素：独占一行，默认宽度是父级的100%，可设置宽高属性更改 -->
+    <div class="c1">纸嫁衣</div>
+    <div class="c2"> 纸嫁衣</div>
+    <!-- 行内元素：一行可以有多个标签，由内容决定元素尺寸为行内元素设置宽高属性时，不会更改其宽高 -->
+    <span class="s1">纸嫁衣</span>
+    <span class="s2">纸嫁衣1233445</span>
+    <span class="s3">纸嫁衣</span>
+    <br>
+    <!-- 行内块元素：一行可以有多个标签，其大小由内容决定 设置宽高可以改变其显示宽高 -->
+    <img class="picture1"  src="../day-05/1.png" alt="">
+    <img class="picture2" src="../day-05/2.png" alt="">
+</body>
+</html>
