@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清楚默认样式</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        /* 可以清除无序列表的点（本质是将圆点移到屏幕外） */
+        li {
+            /* 去除无序、有序前的项目符号可通过list-style：none */
+            list-style: none;
+        }
+        /* box-sizing可以防止后续增加内边距和边框线时扩大盒子，但会将盒子内容区域减小（本质引起） */
+        h1 {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            padding: 20px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1>纸嫁衣</h1>
+    <p>一共8代</p>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+    </ul>
+</body>
+</html>

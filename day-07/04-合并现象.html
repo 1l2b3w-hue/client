@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外边距问题：合并现象</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+        p {
+            width: 100px;
+            height: 100px;
+        }
+        .up {
+            background-color: red;
+            margin-bottom: 20px;
+        } 
+        .down {
+            background-color: skyblue;
+            margin-top: 30px;
+        }
+        /* 发送合并，使用down的上边距30px */
+    </style>
+</head>
+<body>
+    <div>
+        <p class="up">纸嫁衣</p>
+        <p class="down">尘白禁区</p>
+    </div>
+</body>
+</html>

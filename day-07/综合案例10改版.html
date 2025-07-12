@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>综合案例10改版</title>
+    <style>
+        /* 完成默认设置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        /* 设置主区域 */
+        .news {
+            width: 360px;
+            height: 200px;
+            background-color: skyblue;
+            margin: 100px auto;
+        }
+        .head {
+            height: 34px;
+            background-color: #eee;
+            border: 1px solid #dbdee1;
+            border-left: 0;
+        }
+        .news .head a {
+           
+            display:inline-block;
+            border-top: 3px solid #ff8400;
+            border-right: 1px solid #dbdee1;
+            margin-top: -1px;
+            /* 盒子上移,压住父级边框 */
+            height: 34px;
+            width: 48px;
+            background-color: #fff;
+            text-align: center;
+            line-height: 31px;
+            /* 使用line-align实现水平居中时，应该考虑到边框线、内外边距的影响 */
+            color: #333;
+            font-size: 14px;
+        }
+        .body {
+           padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="news">
+        <div class="head">
+            <a href="#" >新闻</a>
+        </div>
+        <div class="body">
+            <ul>
+                <li><a href="#">点赞“新农人” 温暖的伸手</a></li>
+                <li><a href="#">在希望的田野上...</a></li>
+                <li><a href="#">“中国天眼” 又有新发现 已在《自然》杂志发表</a></li>
+                <li><a href="#">急！这个邻域，缺人！月薪4万元还不好招！啥情况？</a></li>
+                <li><a href="#">G9“带货”背后：亏损面持续扩大，竞争环境激烈</a></li>
+                <li><a href="#">多地力推二手房“带押过户”，有什么好处？</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

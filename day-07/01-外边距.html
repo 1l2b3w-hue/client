@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外边距</title>
+    <style>
+        div {
+            width: 500px ;
+            height: 500px;
+            background-color: skyblue;
+            text-align: center;
+            background-image: url(../day-05/3.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            /* 多值写法 */
+            /* margin: 20px;*/
+            /* margin: 10px 20px; */
+            /* margin: 10px 20px 30px; */
+            /* margin: 10px 20px 30px 40px; */
+            
+            /* 单值写法 */
+            /* margin-top: 20px;
+            margin-right: 30px;
+            margin-bottom: 40px;
+            margin-left: 50px; */
+            /* margin不会撑大盒子 */
+
+            /* 版心居中 */
+            /* 将左右外边距写为auto */
+            /* margin-right: auto;
+            margin-left: auto; */
+            margin: 0 auto;
+            /* 设置auto后，浏览器会根据自身的宽度，先减去盒子的宽度，剩下的宽度除2平均分给左右外边距 */
+        }
+    </style>
+</head>
+<body>
+    <div>纸嫁衣</div>
+
+</body>
+</html>

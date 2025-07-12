@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行内元素-内外边距问题</title>
+    <style>
+        span {
+            background-color: skyblue;
+            /* margin、padding都只会添加水平上的内外边距，不会影响垂直方向上的内外边距 */
+            margin: 10px;
+            padding: 10px;
+            
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <span>纸嫁衣</span>
+</body>
+</html>

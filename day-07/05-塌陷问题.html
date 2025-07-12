@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外边距问题——塌陷问题</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div {
+            height: 200px;
+            width: 200px;
+            background-color: skyblue;
+            /* padding: 20px; */
+            /* overflow: hidden; */
+            /* 为什么？ */
+            /* 为父级设置overflow：hidde，让浏览器可以正确找到父级盒子的正确位置，会将父级盒子放在他应该出现的位置，而找到子级的margin-top时，为避免父级的盒子位置错误，会将margin-top放在子级上，从而使子级顶部正确远离父级顶部 */
+            border-top: 1px solid black;
+            /* 为什么？ */
+            /* 跟设置overflow：hidden原理一致，确定正确父级盒子位置，将样式正确给子级 */
+        }
+        p {
+            background-color: red;
+            margin-top: 20px;
+        }
+        /* 解决办法：1.取消子级的margin-top，为父级增加padding来实现将子级内容下移  规避*/
+        /* 2.父级设置隐藏溢出  解决*/
+        /* 3.为父级设置一个边框线  解决*/
+    </style>
+</head>
+<body>
+    <div>
+        <p>尘白禁区</p>
+    </div>
+</body>
+</html>

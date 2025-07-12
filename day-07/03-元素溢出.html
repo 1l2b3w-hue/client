@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素溢出</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            /* 控制元素溢出显示方式 */
+            overflow: hidden;
+            /* 以盒子内容为界，隐藏超出盒子外的所有子级元素,最为常用 */
+            /* 只有内容超出时，才显示滚轮位置（只有垂直位置），可通过滚轮查看查出元素 */
+            /* overflow: auto; */
+            /* 无论是否超出，都设置滚轮供滑动（有垂直，有水平）,但好像动不了*/
+            /* overflow: scroll; */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>凡人成仙是逆天之举，是逆天之举，凡人成仙是逆天之举，是逆天之举，天理难容凡人成仙是逆天之举，是逆天之举，天理难容</p>
+    </div>
+</body>
+</html>
