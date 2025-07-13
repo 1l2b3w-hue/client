@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div {
+            position: relative;
+
+
+            margin: 10px auto;
+            width: 395px;
+            height: 300px;
+            background-color: skyblue;
+        }
+        span {
+            position: absolute;
+            /* 一定要记得子绝父相 */
+            /* 脱标不占位置 */
+            top: 0;
+            right: 0;
+            /* 参照物，最先找最近的已经定位的祖先标签，若祖先标签都无定位，则按照浏览器的窗口进行定位 */
+            /* display: block; */
+            /* 绝对定位的盒子显示模式会改变（宽高生效，行内块） */
+            height: 40px;
+            width: 100px;
+            background-color: gray;
+            text-align: center;
+            line-height: 40px;
+        }
+        h2 {
+            padding-left: 20px;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="./2.png" alt="一张图片" title="一张图片">
+        <span>展会活动</span>
+        <h2>2222世界移动大会（NWC）</h2>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品区域布局</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        li {
+            list-style: none;
+        }
+        .main {
+            height: 300px;
+            width: 600px;
+            /* background-color: gray; */
+            padding : 10px 50px;
+            margin: 10px auto;
+        }
+        .left {
+            height: 280px;
+            width:100px;
+            background-color: skyblue;
+            float: left;
+        }
+       .right {
+            width: 400px;
+            height: 280px;
+            /* background-color: red; */
+            float:right
+       }
+       li {
+            height: 135px;
+            width: 90px;
+            background-color: orange;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            float: left;
+       }
+       /* 可以不用区分开来写样式 */
+       /* .down {
+            height: 135px;
+            width: 90px;
+            background-color: orange;
+            margin-left: 10px;
+            margin-top: 10px;
+            float: left;
+       } */
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left"></div>
+         <!-- 整齐排布，用ul的li标签 -->
+        <div class="right">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <!-- <li class="up"></li>
+            <li class="up"></li>
+            <li class="up"></li>
+            <li class="up"></li>  
+            <li class="down"></li>
+            <li class="down"></li>
+            <li class="down"></li>
+            <li class="down"></li> -->
+            </ul>
+        </div>
+        
+        
+        <!-- <div class="right">
+           
+        
+            <div class="up"></div>
+            <div class="up"></div>
+            <div class="up"></div>
+            <div class="up"></div>
+            <div class="down"></div>
+            <div class="down"></div>
+            <div class="down"></div>
+            <div class="down"></div>
+        </div> -->
+    </div>
+</body>
+</html>

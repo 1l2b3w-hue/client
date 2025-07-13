@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动</title>
+    <style>
+        .one {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            float: left;
+            /* 给一个盒子设置float时，会使其脱离标准流（让其浮起来），不在按照标准流形式排放，此时浏览器默认将该盒子并不在父级中，将其兄弟标签往上移动置顶 */
+        }
+        .two {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+   <div class="one"></div>
+   <div class="two"></div>
+</body>
+</html>

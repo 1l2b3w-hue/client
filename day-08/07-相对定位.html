@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相对定位</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div {
+            height: auto;
+            width: auto;
+            position: relative;
+            top: 100px;
+            /* 按照自身位置向下移动,本质是移动到top100处 */
+            /* bottom: 400px; */
+            /* 往上太过头就会吞掉超出部分图片 */
+            /* right:100px; */
+            /* 往左移动 */
+            left: 300px;
+            /* 往右移动 */
+
+            /* 根据自身原来位置进行定位；虽然移动了自己的位置，但自身不脱标，任然占据原来位置;不会改变标签的显示特点 */
+        }
+      
+    </style>
+</head>
+<body>
+    <p>working together to keep the Internet alive and accessible,so people worldwide can be
+        informed contributors and creators of the Web. We believe this act of human collaboration
+        across an open platform is essential toindividual growth and our collective future.
+        working together to keep the Internet alive and accessible,so people worldwide can be
+        informed contributors and creators of the Web. We believe this act of human collaboration
+        across an open platform is essential toindividual growth and our collective future.
+        working together to keep the Internet alive and accessible,so people worldwide can be
+        informed contributors and creators of the Web. We believe this act of human collaboration
+        across an open platform is essential toindividual growth and our collective future.
+    </p>
+    <div>
+        <img src="../day-05/3.jpg" alt="双半仙" title="双半仙">
+    </div>
+    <p>working together to keep the Internet alive and accessible,so people worldwide can be
+        informed contributors and creators of the Web. We believe this act of human collaboration
+        across an open platform is essential toindividual growth and our collective future.
+    </p>
+</body>
+</html>

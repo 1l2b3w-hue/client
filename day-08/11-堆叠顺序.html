@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>堆叠顺序</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div {
+             height: 300px;
+             width: 300px;
+             position: absolute;
+        }
+        .box1 {
+            background-color: skyblue;
+            left:200px;
+            top: 100px;
+            /* z-index默认为0，取值越大，显示顺序越上 */
+            z-index: 1;
+        }
+        .box2 {
+            background-color: red;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>
