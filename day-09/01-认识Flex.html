@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>认识Flex</title>
+    <style>
+        .contain {
+            display: flex;
+            justify-content: space-between;
+            /* 简单，无需计算就可以自动实现分布，不脱标，即使父盒子没有高度，也可以通过子盒子撑开 */
+            margin: 0 auto;
+            width: 300px;
+            /* height: 300px; */
+            /*无高度时，因为脱标，产生浮动影响 */
+            background-color: skyblue;
+        }
+        .contain div {
+            /* float: left; */
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+        }
+        /* 麻烦 */
+        /* .contain div:nth-child(-n+2) {            
+            margin-right: 75px;
+        } */
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

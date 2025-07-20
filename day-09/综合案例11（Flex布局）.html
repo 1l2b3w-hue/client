@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抖音解决方案</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .contain {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-evenly;
+            margin: 10px auto;
+            width: 800px;
+            /* background-color: skyblue; */
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contain div {
+            padding-left: 70px;
+            padding-top: 16px;
+            width: 300px;
+            height: 100px;
+            background-image: url(../day-08/instance/1.png);
+            background-repeat: no-repeat;
+            background-position: 0 center;
+            color: #333;
+        }
+        .contain div h3 {
+            font-size: 12px;
+            font-weight: 400;
+        }
+        .contain div a {
+            font-size: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        .contain div:nth-child(2) {
+            background-image: url(../day-08/instance/2.png);
+        }
+        .contain div:nth-child(3) {
+            background-image: url(../day-08/instance/3.png);
+        }
+        .contain div:nth-child(4) {
+            background-image: url(../day-08/instance/4.png);
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div>
+            <h3>一键发布到多端</h3>
+            <a href="#">发布视频到抖音短视频、西瓜视频及今日头条</a>
+        </div>
+        <div>
+            <h3>管理视频内容</h3>
+            <a href="#">支持修改已发布稿件状态和实时查询视频审核状态</a>
+        </div>
+        <div>
+            <h3>发布携带组件</h3>
+            <a href="#">支持分享内容携带小程序、地理位置信息等组件，扩展内容及突出地域性</a>
+        </div>
+        <div>
+            <h3>数据评估分析</h3>
+            <a href="#">获取视频在对应产品内的数据表现、获取抖音热点，及时进行表现评估</a>
+        </div>
+    </div>
+</body>
+</html>
