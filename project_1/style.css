@@ -10,6 +10,9 @@ a {
 li {
     list-style: none;
 }
+body {
+    background-color: #f3f5f7;
+}
 .heard {
     height: 100px;
 }
@@ -178,3 +181,95 @@ li {
 .ban_body .right div li a>span:nth-child(2) {
     color: #00a4ff;
 } 
+.recommend {
+    display: flex;
+    margin: 12px auto 0;
+    padding: 0 20px;
+    width: 1200px;
+    height: 60px;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+}
+.recommend h3 {
+    width: 65.5px;
+    height: 60px;
+    font-size: 16.38px;
+    font-weight: 400;
+    color: #00a4ff;
+    line-height: 60px;
+}
+.recommend ul {
+    display: flex;
+    width: 1028px;
+    font-size: 18px;
+    color: #333;
+}
+.recommend ul li {
+    line-height: 60px;
+}
+.recommend ul li a {
+    padding: 0 24px;
+    border-right: 1px solid #e6e6e6;
+}
+.recommend>a {
+    float: right;
+    font-size: 16px;
+    color: #00a4ff;
+    line-height: 60px;
+}
+.course {
+    margin: 15px auto 0;
+    width: 1200px;
+    height: 630px;
+}
+.cor_head {
+    display: flex;
+    justify-content: space-between;
+    line-height: 60px;
+}
+.cor_head h3 {
+    width: 84px;
+    height: 60px;
+    font-size: 21px;
+    color: #333;
+    font-weight: 400;
+}
+.cor_head a {
+    font-size: 14px;
+    color: #999;
+}
+.cor_head a::after {
+    content: ">";
+    margin-left: 10px;
+}
+.cor_body {
+    height: 570px;
+}
+.cor_body ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.cor_body ul li {
+    margin-bottom: 14px;
+}
+.cor_body>ul>li>a>div {
+    width: 228px;
+    height: 115px;
+    color: #333;
+    font-size: 14px;
+    padding: 20px;
+    background-color: #fff;
+}
+.cor_body>ul>li>a>div h4 {
+    height: 40px;
+    margin-bottom: 13px;
+    font-weight: 400;
+}
+.cor_body>ul>li>a>div p {
+    color: #999;
+}
+.cor_body>ul>li>a>div>p>span {
+    color: #fa6400;
+}
