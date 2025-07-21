@@ -15,6 +15,7 @@ body {
 }
 .heard {
     height: 100px;
+    background-color: #fff;
 }
 .h_body {
     display: flex;
@@ -23,44 +24,39 @@ body {
     width: 1200px;
     height: 71px;
 }
-.h_body>a {
-    display: inline-block;
+.h_body>.logo>h1>a {
+    display: block;
     width: 195px;
     height: 41px;
     background-image: url(./images/logo.png);
-    background-repeat: no-repeat;
-    background-position: left center;
+    font-size: 0;
 }
 .h_nav {
     margin-left: 102px;
-    width: 254px;
-    height: 41px;
 }
 .h_nav ul {
     display: flex;
+    width: 280px;
+    height: 41px;
 }
-.h_nav li:nth-child(-n+2) {
+.h_nav li {
     margin-right: 26px;
     
 }
 .h_nav li>a {
     display: inline-block;
-    width: 54px;
     height: 39px;
+    font-size: 19px;
+    line-height: 27px;
     padding: 6px 8px;
 }
-.h_nav li:last-child a  {
-    width: 92px;
-}
-.h_nav li>a:hover {
+.h_nav li:first-child , .h_nav li>a:hover {
     border-bottom: 2px solid skyblue;
 }
 .h_search {
     display: flex;
     margin-left: 64px;
     padding: 0 12px 0 19px;
-    width: 412px;
-    height: 40px;
     border-radius: 20px;
     background-color: #f3f5f7;
 }
@@ -70,31 +66,32 @@ body {
     height: 40px;
     border: none;
     background-color: #f3f5f7;
-}
-.h_search input:focus {
     outline: none;
+}
+.h_search input::placeholder {
+    font-size: 14px;
+    color: #999;
 }
 .h_search a {
     align-self: center;
-    display: inline-block;
     width: 16px;
     height: 16px;
     background-image: url(./images/搜索.png);
-    background-repeat: no-repeat;
-    background-position: right center;
 }
 .user {
     margin: 4px 0 0 32px;
-    width: 121.16px;
-    height: 37px;
 }
 .user img {
     margin-right: 7px;
+    vertical-align: middle;
 }
 .user a {
     display: flex;
     width: 121.16px;
     color: #666;
+}
+.user a span {
+    align-self: center;
 }
 .banner {
     
@@ -199,6 +196,8 @@ body {
 }
 .recommend ul {
     display: flex;
+    /* 分开h3和a标签，让其独占剩余的flex弹性容器 */
+    flex: 1;
     width: 1028px;
     font-size: 18px;
     color: #333;
@@ -211,7 +210,7 @@ body {
     border-right: 1px solid #e6e6e6;
 }
 .recommend>a {
-    float: right;
+    /* float: right; */
     font-size: 16px;
     color: #00a4ff;
     line-height: 60px;
