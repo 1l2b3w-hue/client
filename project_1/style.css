@@ -191,7 +191,6 @@ body {
     border: 1px solid #e6e6e6;
 }
 .recommend h3 {
-    width: 65.5px;
     height: 60px;
     font-size: 16.38px;
     font-weight: 400;
@@ -242,15 +241,13 @@ body {
     content: ">";
     margin-left: 10px;
 }
-.cor_body {
-    height: 570px;
-}
 .cor_body ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
 }
+/* 小方格 */
 .cor_body ul li {
     margin-bottom: 14px;
 }
@@ -262,14 +259,110 @@ body {
     padding: 20px;
     background-color: #fff;
 }
-.cor_body>ul>li>a>div h4 {
+.cor_body>ul>li>a>div>h4 {
     height: 40px;
     margin-bottom: 13px;
     font-weight: 400;
 }
-.cor_body>ul>li>a>div p {
+.cor_body>ul>li>a>div>p {
     color: #999;
 }
 .cor_body>ul>li>a>div>p>span {
     color: #fa6400;
+}
+.client,.ai,.je{
+    margin: 15px auto 0;
+    width: 1200px;
+}
+.cli_head {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 60px;
+    line-height: 60px;
+    color: #333;
+}
+.cli_head h3 {
+    font-size: 21px;
+    font-weight: 400;
+}
+.cli_head ul {
+    display: flex;
+}
+.cli_head ul li a {
+    margin: 0 30px;
+    font-size: 16px;
+}
+.cli_head ul li:first-child a {
+    color: #00a4ff;
+}
+.cli_head>a {
+    color: #999;
+    font-size: 14px;
+}
+.cli_head>a::after {
+    content: ">";
+    margin-left: 10px;
+}
+.cli_body {
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+}
+.footer {
+    margin-top: 60px;
+    padding-top: 60px;
+    height: 273px;
+    background-color: #fff;
+}
+.f_body {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1200px;
+    height: 156px;
+}
+.f_left {
+    width: 440px;
+}
+.f_left p {
+    margin-top:  24px;
+    font-size: 12px;
+    color: #999;
+}
+.f_left a {
+    display: inline-block;
+    margin-top: 14px;
+    width: 120px;
+    height: 36px;
+    font-size: 14px;
+    color: #00a4ff;
+    text-align: center;
+    line-height: 36px;
+    border: 1px solid #00a4ff;
+}
+.f_right {
+    display: flex;
+    justify-content: space-between;
+    width: 516px;
+    height: 156px;
+    font-size: 14px;
+    color: #333;
+}
+.f_right dl:first-child {
+    width: 80px;
+}
+.f_right dl:nth-child(2) {
+    width: 112px;
+}
+.f_right dl:last-child {
+    width: 64px;
+}
+.f_right dl dt {
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+.f_right dl dd {
+    display: inline-block;
+    height: 21px;
 }
