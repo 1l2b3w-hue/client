@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮播图</title>
+    <link rel="stylesheet" href="./inconfont/iconfont.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li {
+            list-style: none;
+        }
+        .banner {
+            position: relative;
+            margin: 10px auto;
+            width: 1040px;
+            height: 384px;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+        .banner ul {
+            display: flex;
+        }
+        .banner ul li  {
+            cursor: pointer;
+        }
+        .iconfont {
+            position: absolute;
+            top:177px;
+            width: 50px;
+            height: 30px;
+            text-align: center;
+            border-radius: 25px;
+            line-height: 30px;
+            background-color: skyblue;
+            cursor: pointer;
+            display: none;
+            /* opacity: 0; */
+        }
+      
+        .banner:hover .iconfont{
+            display: block;
+            transition: opacity 1s;
+        }
+        .icon-fanhui {
+            left: -15px;
+        }
+        .icon-jinru {
+            right: -15px;
+        }
+        .circle {
+            position: absolute;
+            bottom: 10px;
+            left:475px;
+            background-color: rgb(230, 230, 230);
+            border-radius: 5px;
+        }
+        .circle li {
+            margin: 0 4px;
+            width: 10px;
+            height: 10px;
+            background-color: gray;
+            border-radius: 5px;
+        }
+        .circle li:first-child {
+            background-color: orange;
+        }
+        /* 一般情况下，是为其设置类名来处理显示当前图片的圆点样式，因为这样可以方便后续JS快速转换给下一圆点 */
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <ul>
+            <li><img src="./images/轮播图1.avif" alt=""></li>
+            <li><img src="./images/轮播图2.avif" alt=""></li>
+            <li><img src="./images/轮播图3.avif" alt=""></li>
+            <li><img src="./images/轮播图4.avif" alt=""></li>
+            <li><img src="./images/轮播图5.avif" alt=""></li>
+        </ul>
+        <span class="iconfont icon-fanhui"></span>
+        <span class="iconfont icon-jinru"></span>
+        <ul class="circle">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </div>
+</body>
+</html>

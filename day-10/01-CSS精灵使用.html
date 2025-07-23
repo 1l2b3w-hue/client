@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS精灵基础使用</title>
+    <style>
+        body {
+            display: flex;
+        }
+        div {
+            background-image: url(./PixPin_2025-07-22_14-17-00.png);
+        }
+        div:first-child {
+            width: 62px;
+            height: 70px;
+            background-color: skyblue;
+            background-position: -5px -174px;
+            /* 整体是将大图放入一个小盒子（大小刚好放下需要的图片）中，然后使用后background-position来移动被隐藏的盒子位置来显示具体图片 */
+        }
+        div:nth-child(2) {
+            width: 65px;
+            height: 68px;
+            background-color: blue;
+            background-position: -79px -7px;
+        }
+        div:last-child {
+            width: 86px;
+            height: 69px;
+            background-color: red;
+            background-position: -75px -354px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>
