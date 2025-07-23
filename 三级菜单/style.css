@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+li {
+    width: 100px;
+    height: 50px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 48px;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.three>ul>li {
+    position: relative;
+}
+.three>ul>li:hover .two{
+    height: 150px;
+    overflow: visible;
+}
+.two{
+    top: 25px;
+    right: -100px;
+    position: absolute;
+    height: 0px;
+    overflow: hidden;
+}
+.two>ul>li {
+    position: relative;
+}
+.one {
+    position: absolute;
+    top:25px;
+    right: -100px;
+    height: 150px;
+    display: none;
+}
+.two>ul>li:hover .one {
+    display: block;
+}
