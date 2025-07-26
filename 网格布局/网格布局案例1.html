@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,35 +9,65 @@
         div {
             border: 1px solid #000;
         }
+
         .contain {
             width: 500px;
             height: 500px;
             display: grid;
-            grid-template-columns: repeat(4,1fr);
-            grid-template-rows: repeat(4,1fr);
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            /* grid-column-gap: 10px;
+            grid-row-gap: 20px; */
+            /* grid-gap: 0px 20px; */
         }
+
         .box1 {
-            grid-column-start: 1;
-            grid-column-end: -1;
+            /* grid-row-start: 1; */
+            /* grid-column-start: 1;
+            grid-column-end: -1; */
+            grid-column: 1/-1;
+            background-color: rgb(135, 235, 177);
         }
+        /* 网格布局中，网格项是会发生挤压，强行让网格项放在一起时，会发生某一项盖住另一项（可以调整z-index调整） */
         .box2 {
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 2;
-            grid-row-end: 4;
+            /* grid-column-start: 1;
+            grid-row-start: 1;
+            grid-row-end: 4; */
+            /* 开始/结束 */
+            /* grid-row: 2/4; */
+            grid-area: 2/1/4/2;
+            /* grid-area:一个复合属性，属性值依次为：row-start、cloumn-start、row-end、coloumn-end */
+            background-color: #f84c4c;
         }
+
         .box3 {
             grid-column-start: 2;
             grid-column-end: -1;
+            background-color: rgb(20, 84, 109);
         }
+
+        .box4 {
+            background-color: rgb(212, 135, 235);
+        }
+
+        .box4 {
+            background-color: rgb(225, 235, 135);
+        }
+
+        .box4 {
+            background-color: rgb(235, 135, 173);
+        }
+
         .box7 {
             grid-column-start: 1;
             grid-column-end: -1;
             grid-row-start: -2;
             grid-row-end: -1;
+            background-color: rgb(64, 211, 72);
         }
     </style>
 </head>
+
 <body>
     <div class="contain">
         <div class="box1">网页的头部</div>
@@ -48,4 +79,5 @@
         <div class="box7">底部</div>
     </div>
 </body>
+
 </html>

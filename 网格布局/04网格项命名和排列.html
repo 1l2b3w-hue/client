@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid #000;
+        }
+        .contain {
+            display: grid;
+            width:800px ;
+            grid-template-columns: 200px 200px 200px 200px;
+            grid-template-rows: 100px 200px 200px 100px;
+            grid-template-areas: 
+                    "head head head ."
+                    "side main main main"
+                    "side main main main"
+                    "foot foot foot ."
+            ;
+        }
+        .box1 {
+            grid-area: head;
+            /* 默认防在网格容器右下方(会新增一列一行来存放) */
+        }
+        .box2 {
+            grid-area: side;
+        }
+        .box4 {
+            grid-area: main;
+        }
+        .box3 {
+            grid-area: foot;
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div class="box1">头部</div>
+        <div class="box2">侧栏</div>
+        <div class="box3">内容</div>
+        <div class="box4">底部</div>
+    </div>
+</body>
+</html>

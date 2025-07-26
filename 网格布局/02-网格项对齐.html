@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1  {
+            display: grid;
+            width: 800px;
+            height: 800px;
+            border: 10px red solid;
+            grid-template-columns:repeat(3,200px);
+            grid-template-rows: 200px 200px;
+            /* 在没有设置justify-items、align-items时，默认为stretch，并且此时没有为网格项设置相应高宽，默认拉伸到填满网格项 */
+            /* 关于网格项内的轨道对齐 */
+            justify-items: center;
+            align-items: center;
+            /* 关于整体的网格项的水平、垂直对齐 */
+            /* 与flex布局中的属性效果一致 */
+            justify-content: space-between;
+            align-content: space-between;
+
+        }
+        .box1>div {
+            /* width: 100px;
+            height: 100px; */
+            border: 2px solid orange;
+        }
+        .box5 {
+            /* 单独为一个网格项设置轨道对齐 */
+            justify-self: start;
+            align-self: end;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+        <div class="box5">box5</div>
+        <div class="box6">box6</div>
+        <div class="box7">box7</div>
+    </div>
+</body>
+</html>
