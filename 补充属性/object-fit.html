@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img {
+            margin: 0 auto;
+            width: 400px;
+            height: 200px;
+            background-color: skyblue;
+            object-fit: cover;
+            /* 常用，图片按照原有宽高比例来铺满固定的img区域，期间超出区域部分会裁剪，留下图片中心核心区域 */
+            /* object-fit: contain; */
+            /*图片完整显示： 图片按照原有宽高比例来放入固定的img区域，期间会存在上下左右空白区域 */
+            /* object-fit: fill; */
+            /* 默认值，图片完全覆盖img区域（完整显示），会改变原有高宽比,非常不推荐,当然你想要改变高宽比完整放入那没得说 */
+            /* object-fit: none; */
+            /* 图片按照默认尺寸放入img区域，超出部分进行裁剪 */
+        }
+    </style>
+</head>
+<body>
+    <img src="../2.jpg" alt="">
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .contain {
+            margin: 0 auto;
+            padding: 30px 0px 0px 20px;
+            width: 400px;
+            height: 200px;
+            /* background-color: skyblue; */
+            overflow: scroll;
+        }
+        li {
+            list-style: none;
+            height: 50px;
+            line-height: 50px;
+            border-bottom: 1px solid #ccc;
+        }
+        .A,.C,.E,.T {
+            position:sticky;
+            top: 0px;
+            /* 此时A被设定为粘性定位，并于第一个ul进行定位，此时top被设置为0，A相对于第一个ul进行定位 */
+            /* 后续同理，各自相对于自身所处的ul进行定位，在离开自身所处ul时，会停止显示，开始显示其他ul的标题 */
+            background-color: gray;
+            height: 30px;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div>
+            <ul>
+               <li class="A">A</li> 
+               <li>a</li>
+               <li>ai</li>
+               <li>an</li>
+               <li>ang</li>
+               <li>ao</li>
+            </ul>
+            <ul>
+                <li class="C">C</li> 
+                <li>ca</li>
+                <li>cai</li>
+                <li>can</li>
+                <li>cao</li>
+                <li>ce</li>
+             </ul>
+             <ul>
+                <li class="E">E</li> 
+                <li>ei</li>
+                <li>en</li>
+                <li>er</li>
+                
+             </ul>
+             <ul>
+                <li class="T">T</li> 
+                <li>ta</li>
+                <li>tai</li>
+                <li>tan</li>
+                <li>tang</li>
+                <li>tao</li>
+             </ul>
+        </div>
+    </div>
+</body>
+</html>
