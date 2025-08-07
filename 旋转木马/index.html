@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旋转木马</title>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <style>
+        .main {
+            position: relative;
+            margin: 0 auto;
+            width: 750px;
+            height: 497px;
+            /* background-color: skyblue; */
+            overflow: hidden;
+        }
+
+        .swiper-container {
+            /* 约束整个轮播图，控制显示区域 */
+            margin: 0 auto;
+            width: 537px;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            /* 控制排放 */
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            transition: 300ms;
+            /* 有坏东西影响了下面属性，只能加important了 */
+            transform: scale(0.8) !important;
+            opacity: 0.4;
+        }
+        .swiper-slide>a {
+            width: 338px;
+            height: 376px;
+        }
+        .swiper-slide>a>img {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide>span {
+            font-size: 25px;
+            margin-top: 24px;
+        }
+        .swiper-slide-active,
+        .swiper-slide-duplicate-active {
+            transform: scale(1) !important;
+            z-index: 10;
+            opacity: 1;
+        }
+        /* 定位箭头 */
+        div[class^="swiper-button-"] {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/1.png" alt=""></a>
+                    <span>1</span>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/1.png" alt=""></a>
+                    <span>2</span>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/1.png" alt=""></a>
+                    <span>3</span>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/1.png" alt=""></a>
+                    <span>4</span>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/1.png" alt=""></a>
+                    <span>5</span>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/1.png" alt=""></a>
+                    <span>6</span>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/1.png" alt=""></a>
+                    <span>7</span>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/1.png" alt=""></a>
+                    <span>8</span>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/1.png" alt=""></a>
+                    <span>9</span>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/1.png" alt=""></a>
+                    <span>12345</span>
+                </div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <script src="./js/swiper-bundle.js"></script>
+    <script>
+        (function () {
+            var swiper = new Swiper('.swiper-container', {
+                // 显示slider数量
+                slidesPerView: 2,
+                // 调节slider的间距
+                spaceBetween: 10,
+                // 控制中间的slider是否放在中间，true是中间，
+                centeredSlides: true,
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        })();
+
+    </script>
+</body>
+
+</html>
